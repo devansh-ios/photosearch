@@ -1,0 +1,51 @@
+#contact{
+    margin:8rem auto 3rem auto ;
+    text-align:center;
+    padding:4rem;
+    background: linear-gradient(   rgb(241, 171, 183),white);
+    height:70vh;    
+}
+#contact h2{
+    font-size: 3em;
+    color:white;
+         font-family: "Montserrat", sans-serif;
+}
+
+#contact form input,textarea,button{
+ display: grid;
+justify-content: center;
+align-items: center;
+margin:  auto ;
+ 
+}
+#contact form input[type= email],input[type=password],textarea[type=text]{
+    font-family: "Montserrat", sans-serif;
+  height:3rem;
+  width:30%;
+padding-left:2rem;
+text-transform: capitalize;
+}
+#textArea{
+    height:6rem;
+    padding-top:1rem;
+}
+form{
+    margin-top:4rem;
+}
+/*//////////// media query start from here  /////////// */
+
+@media(max-width:1000px){
+     #contact form  input[type=email],input[type=password],textarea[type=text]{
+        padding:0;
+        height:2rem;
+        width:55%;
+    }
+}
+@media(max-width:400px){
+    #contact form  input[type=email],input[type=password],textarea[type=text]{
+       padding:0;
+       height:2rem;
+       width:75%;
+   }
+   
+}

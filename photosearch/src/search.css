@@ -1,0 +1,114 @@
+#search {
+  margin: 5rem auto 5rem auto;
+  height: 70vh;
+  width: 100%;
+  opacity: 0.77;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url("..assets/src/images/sea-7362107_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#search h3 {
+  color: white;
+
+  padding-top: 6rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  font-size: 4em;
+}
+#search input {
+  animation: glow 5s infinite ease-in-out;
+  margin-top: 4rem;
+  height: 3rem;
+  width: 35rem;
+  border-radius: 20px;
+  padding: 1rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+#search input[type="text"] {
+  font-size: 1em;
+}
+#searchinput::placeholder {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+}
+@keyframes glow {
+  from {
+    box-shadow: 10px 10px 5px var(--purple);
+  }
+  to {
+    box-shadow: 15px 15px 10px purple;
+  }
+}
+#button {
+  margin-top: 2rem;
+  border-radius: 20px;
+  height: 2.5rem;
+  width: 7rem;
+  background-image: linear-gradient(var(--purple), pink);
+  font-family: "Montserrat", sans-serif;
+}
+#button:hover {
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+  background-image: linear-gradient(pink, var(--purple));
+}
+/* ///////////////////////output css start from here /////////////////*/
+#output {
+  padding-left: 7rem;
+  display: inline-grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+}
+#output img {
+  filter: opacity(0.6) drop-shadow(0 0 0 grey);
+}
+#output img:hover {
+  filter: none;
+}
+.buttonMore {
+  display: none;
+}
+.submit p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+/* ///////// media query start from here ///////////*/
+
+@media (max-width: 1000px) {
+  #search h3 {
+    font-size: 3em;
+  }
+  #search {
+    width: 100%;
+  }
+  #output {
+    margin: auto;
+    width: 85%;
+    margin-left: -6rem;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+}
+@media (max-width: 700px) {
+  #search h3 {
+    font-size: 2em;
+  }
+  form #input {
+    width: 40%;
+    height: 1.5rem;
+  }
+  #output img {
+    filter: none;
+  }
+}
